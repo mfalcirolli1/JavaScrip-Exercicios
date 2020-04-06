@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÂO</title>
+</head>
+
+<body>
+
+    <h1> Controle de Imigração </h1>
+    <strong> Digite o nome do seu país de origem: </strong> <input type="text" name="pais" id="pais">
+    <input type="button" id="botao" value="Verificar" onclick="verificar()">
+    <div id="result">
+
+    </div>
+
+    <script>
+
+        function verificar() {
+
+            var country = window.document.getElementById("pais")
+            var n1 = String(country.value)
+            var res = window.document.getElementById("result")
+
+            res.innerHTML = `<p> O país inserido é: <strong> ${n1} </strong> </p>`
+
+            if (n1 == "Brasil") {
+                res.innerHTML += `<p>Você é Brasileiro! Seja Bem-Vindo.</p>`
+
+            }
+            else {
+                res.innerHTML += `<p>Você é Estrangeiro! Por favor, apresente o seu passaporte ao agente de imigração.</p>`
+            }
+            res.innerHTML += "<p>Obrigado e volte sempre!</p>"
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
