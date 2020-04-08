@@ -1,6 +1,4 @@
 function counting(){
-    
-    
 
     var i = window.document.getElementById("numi")
     var f = window.document.getElementById("numf")
@@ -48,4 +46,11 @@ function counting(){
         }
         
     }
+}
+
+function limpar() {
+
+    var res = window.document.getElementById("res")
+    res.innerHTML = "Preparando a contagem..."
+
 }
